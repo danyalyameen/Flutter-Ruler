@@ -1,0 +1,32 @@
+name: flutter_ruler
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+# Environment
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+# Dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+
+# Dev Dependencies
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  # Images and Icons
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  
+  # Fonts
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #         style: italic
