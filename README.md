@@ -1,39 +1,84 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+**# 📏 flutter_ruler**
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+A customizable and minimalistic ruler widget for Flutter apps – designed to help users input precise values (like body measurements) through a smooth, scrollable UI.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+**## 📸 Screenshots**
+![Ruler Screenshot](https://drive.google.com/uc?export=view&id=1G5yQS0RWpZoV30tZBHHhP93NHVi0xus_)
 
-## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+**## 🚀 Usage**
 
 ```dart
-const like = 'sample';
+import 'package:flutter_ruler/flutter_ruler.dart';
+import 'package:flutter_ruler/src/Decoration/decoration.dart'; // for PointerDecoration, LineDecoration
+
+FlutterRuler(
+  minValue: 0,
+  maxValue: 100,
+  rulerWidth: 300,
+  rulerHeight: 100,
+  pointerDecoration: PointerDecoration(
+    color: Colors.red,
+    pointerWidth: 4,
+    pointerHeight: 80,
+  ),
+  lineDecoration: LineDecoration(
+    smallLineDecoration: SmallLineDecoration(
+      color: Colors.grey,
+      height: 10,
+      width: 1,
+    ),
+    mediumLineDecoration: MediumLineDecoration(
+      color: Colors.grey,
+      height: 20,
+      width: 2,
+    ),
+    largeLineDecoration: LargeLineDecoration(
+      color: Colors.black,
+      height: 30,
+      width: 2.5,
+    ),
+  ),
+  numberTextStyle: TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  ),
+);
 ```
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+**## 🧠 Constructor Parameters**
+
+| Parameter           | Type               | Description |
+|---------------------|--------------------|-------------|
+| `minValue`          | `int`              | Minimum value of the ruler scale (required) |
+| `maxValue`          | `int`              | Maximum value of the ruler scale (required) |
+| `rulerWidth`        | `double?`          | Width of the entire ruler |
+| `rulerHeight`       | `double?`          | Height of the entire ruler |
+| `lineDecoration`    | `LineDecoration?`  | Styles for small, medium, and large lines |
+| `pointerDecoration` | `PointerDecoration?` | Style of the center pointer |
+| `numberTextStyle`   | `TextStyle?`       | Style for the numbers displayed every 10th value |
+
+---
+
+**## 🧭 Direction Support**
+
+Currently supports ****horizontal**** scrolling.
+****Vertical support is coming soon**** — stay tuned! 🔄
+
+---
+
+**## 🤝 Contributing**
+
+Contributions are welcome! If you want to help improve this package, feel free to fork and submit a pull request.
+GitHub Repo: [flutter_ruler](__https://github.com/danyalyameen/Flutter-Ruler/__)
+
+---
+
+**## 💙 Author**
+
+Made with love by Danyal Yameen
+If you found this useful, a star ⭐️ on GitHub would mean a lot!

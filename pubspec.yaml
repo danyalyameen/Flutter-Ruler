@@ -1,7 +1,7 @@
 name: flutter_ruler
-description: "A new Flutter package project."
+description: "A Flutter package that provides a customizable horizontal and vertical ruler widget for precise measurements input."
 version: 0.0.1
-homepage:
+homepage: https://github.com/danyalyameen/Flutter-Ruler/
 
 # Environment
 environment:
@@ -19,14 +19,16 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+# Assets
 flutter:
-  # Images and Icons
   # assets:
-  #   - images/a_dot_burr.jpeg
+    # Example for adding assets (uncomment if you have images or other assets)
+    # - assets/images/
   
   # Fonts
   # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #         style: italic
+    # Example for adding custom fonts (uncomment and add your fonts if needed)
+    # - family: Schyler
+    #   fonts:
+    #     - asset: fonts/Schyler-Regular.ttf
+    #       style: italic
